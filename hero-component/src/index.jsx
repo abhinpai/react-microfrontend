@@ -1,11 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.scss';
-import Container from './Container';
+import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Container />
+    <h2>Hello</h2>
   </React.StrictMode>,
   document.getElementById('root')
 );
+
+reportWebVitals();

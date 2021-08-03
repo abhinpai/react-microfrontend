@@ -1,10 +1,7 @@
 .container {
-  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)),
-    url(./assets/imgs/marvel.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
-
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
 
@@ -13,63 +10,18 @@
   }
 }
 
-.character {
-  height: 200px;
-  width: 200px;
-  background-color: #000;
-  min-height: 200px;
-  border-radius: 10px;
-  margin: 1rem;
-  position: relative;
-  width: 500px;
-  max-width: 500px;
-  padding: 2rem;
+.button {
+  background: #5c0606;
   color: white;
+  height: fit-content;
+  width: fit-content;
+  font-size: 40px;
+  padding: 1rem;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  border-radius: 8px;
   cursor: pointer;
-
-  &:hover {
-    transform: scale(1.1);
-    transition: 400ms ease-in;
-  }
-
-  ::after {
-    content: '';
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 240px;
-    height: 100%;
-    background: radial-gradient(
-      ellipse 100% 100% at right center,
-      transparent 80%,
-      #000
-    );
-  }
-
-  & img {
-    height: inherit;
-    width: 240px;
-    position: absolute;
-    right: 0;
-    top: 0;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  & div {
-    width: 360px;
-    h1 {
-      font-family: 'Marvel', sans-serif;
-      font-size: 40px;
-    }
-
-    p{
-        width: 300px;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        display: -webkit-box;
-        -webkit-line-clamp: 5; /* number of lines to show */
-        -webkit-box-orient: vertical;
-    }
-  }
+  font-family: 'Marvel', sans-serif;
 }
